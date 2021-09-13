@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        fieldset{
+            width:fit-content;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario de datos personales</h1>
+
+    <form>
+        <fieldset>
+        <input type="text" readonly value="ESTUDIANTE">
+
+        <label for="nombre-completo">Nombre completo:</label>
+        <input type="text" required name="user" id="user">
+
+        <label for="email">Email:</label>
+        <input type="email" required name="email" id="email">
+
+        <label for="edad">Edad:</label>
+        <input type="number" required name="number" id="number" size="10">
+
+        <label for="nacionalidad">Nacionalidad:</label>
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="Argentino" selected>Argentino</option>
+            <option value="Chileno">Chileno</option>
+            <option value="Brasilero">Brasilero</option>
+            <option value="Uruguayo">Uruguayo</option>
+            <option value="Paraguayo">Paraguayo</option>
+        </select>
+
+        <label for="situacion-laboral">Situacion laboral:</label>
+        <select name="situacion-laboral" id="situacion-laboral">
+            <option value="Desempleado">Desempleado</option>
+            <option value="En busqueda laboral">En busqueda laboral</option>
+            <option value="Part time">Part time</option>
+            <option value="Full time">Full time</option>
+        </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Gustos personales</legend>
+            <label for="gustos-musicales">Gustos musicales:</label>
+            <input type="text" name="text" id="text">
+            <select name="comidas-pref" id="comidas-pref">
+                <option value="Milanesas">Milanesas</option>
+                <option value="Pastas">Pastas</option>
+                <option value="Asado">Asado</option>
+                <option value="Sushi">Sushi</option>
+            </select>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
