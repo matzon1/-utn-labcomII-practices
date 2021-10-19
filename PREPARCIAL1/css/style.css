@@ -14,12 +14,10 @@
 .nav-page {
   display: flex;
   width: 100%;
-  background-color: rgb(219, 219, 219);
 }
 
 nav a {
   text-decoration: none;
-  color: rgb(87, 87, 87);
 }
 
 li a:hover{
@@ -71,4 +69,9 @@ section {
   padding-left: 100px;
   padding-right: 210px;
   font-size: 22px;
+  font-weight: bold;
+}
+
+p{
+  font-weight: lighter;
 }
